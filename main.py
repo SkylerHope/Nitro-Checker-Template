@@ -24,7 +24,7 @@ async def on_ready():
 	print("Bot {0.user} is running...".format(bot))
 
 #Check if user has nitro command
-@bot.slash_command(name = 'nitrocheck', description = 'Check if a user has real intro or not')
+@bot.slash_command(name = 'nitrocheck', description = 'Check if a user has real nitro or not')
 async def nitrocheck(ctx: discord.ApplicationContext, user: discord.User = None):
 	if user is None:
 		user = ctx.author
